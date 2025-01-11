@@ -27,6 +27,7 @@ def preprocess(text):
   
   return df
 
+#function for text cleanning 
 def clean_text(text):
   text = re.sub(r'\S+@\S+','emailaddress',text)
 
@@ -44,6 +45,7 @@ def clean_text(text):
 
   return text
 
+#tokenizing and stop word removal
 def tokenize_stopWord(text):
 
   #setting stopword to
