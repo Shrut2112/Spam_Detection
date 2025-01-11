@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import nltk
 import func
 import pickle
 model=pickle.load(open('D:\Data Science\Major project\Spam detection\model (1).pkl','rb'))
