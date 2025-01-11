@@ -3,12 +3,6 @@ import pandas as pd
 import nltk
 import func
 import pickle
-
-
-nltk.download('punkt')        # If using tokenization
-nltk.download('stopwords')    # If using stopwords
-nltk.download('wordnet') 
-nltk.download('punkt_tab')
 model=pickle.load(open('D:\Data Science\Major project\Spam detection\model (1).pkl','rb'))
 vectorizer=pickle.load(open('vectorizer.pkl','rb'))
 
