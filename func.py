@@ -7,54 +7,15 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
+#spam keywords list
+spam_keywords = ['Urgent','Winner','Claim','Free','Risk-free','Prize','Congratulations','Credit','Debt','Exclusive','Guaranteed','Instant','Click here','Limited-time offer','Earn money',
+'Loan','Winner','Deposit','Investment','Unsecured','Apply now','Win big','Offers','Unclaimed','Cash','Verify','Account','Promotion','Win','won','Reward','Cheap','Make money','Best offer','Help you','Opportunity','Bargain','Call now','Confirm','Unsubscribe','Risk-free trial']
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-
-spam_keywords = ['Urgent',
-'Winner',
-'Claim',
-'Free',
-'Risk-free',
-'Prize',
-'Congratulations',
-'Credit',
-'Debt',
-'Exclusive',
-'Guaranteed',
-'Instant',
-'Click here',
-'Limited-time offer',
-'Earn money',
-'Loan',
-'Winner',
-'Deposit',
-'Investment',
-'Unsecured',
-'Apply now',
-'Win big',
-'Offers',
-'Unclaimed',
-'Cash',
-'Verify',
-'Account',
-'Promotion',
-'Win',
-'won',
-'Reward',
-'Cheap',
-'Make money',
-'Best offer',
-'Help you',
-'Opportunity',
-'Bargain',
-'Call now'
-'Confirm',
-'Unsubscribe',
-'Risk-free trial']
-
+#function to count spam keywords
 def count_keywords(text,keywords):
   return sum([1 for word in text.split() if word in keywords])
 
+#function for preprocess
 def preprocess(text):
   
   text = [text]
