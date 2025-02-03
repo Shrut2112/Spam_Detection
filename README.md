@@ -15,8 +15,8 @@ A **machine learning-based Spam Detection system** built with **Python, Scikit-L
 ## Installation
 1. Clone this repository:
   ```sh
-  git clone https://github.com/Shrut2112/spam-detection.git
-  cd spam-detection
+  git clone https://github.com/Shrut2112/Spam_Detection
+  cd Spam_Detection
   ```
 2. Install dependencies:
   ```sh
